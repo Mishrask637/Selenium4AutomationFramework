@@ -12,10 +12,6 @@ options{
 // triggers{cron(getCronPattern())}
 
 parameters{
-    choice name:'Env_Name',
-    choices:['test','dev','stage','prod'],
-    description:'Select The Environment'
-
     choice name:'Browser',
     choices:['chrome','MicrosoftEdge','firefox'],
     description:'Select Browser'
