@@ -12,7 +12,7 @@ public class DriverFactory {
     private static WebDriver driver = null;
 
     private DriverFactory(){
-        String browser = "chrome";
+        String browser = System.getProperty("Browser");
 
         switch (browser.toLowerCase()){
             case "chrome":
